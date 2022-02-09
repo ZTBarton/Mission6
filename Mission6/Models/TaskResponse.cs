@@ -10,6 +10,8 @@ namespace Mission6.Models
             [Required]
             public int TaskId { get; set; }
             [Required]
+            public int TaskName { get; set; }
+            [Required]
             public string Category { get; set; }
             [Required]
             public DateTime DueDate { get; set; }
