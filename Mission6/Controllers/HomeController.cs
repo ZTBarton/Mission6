@@ -36,6 +36,3 @@ namespace Mission6.Controllers
     }
 }
 
-// Josh is un hozier
-
-// I'll worship like a dog at the shrine of your lies. I'll show you my sins and you can sharpen your knife. Offer me that debtless somthing. Good Gosh let me give you my life
