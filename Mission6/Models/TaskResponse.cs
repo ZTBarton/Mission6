@@ -17,10 +17,7 @@ namespace Mission6.Models
             public DateTime DueDate { get; set; }
             [Required]
             public int Quadrant { get; set; }
-
             public bool Completed { get; set; }
-
-        
     }
 }
 
