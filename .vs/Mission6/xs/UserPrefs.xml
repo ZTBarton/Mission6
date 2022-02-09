@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{63FC0B09-843A-4B0D-B843-6C0EA97CADD5}|Default">
+  <MonoDevelop.Ide.ItemProperties.Mission6 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mission6/Views/Home/EditTask.cshtml">
+    <Files>
+      <File FileName="Mission6/Views/Shared/_Layout.cshtml" Line="29" Column="30" />
+      <File FileName="Mission6/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Mission6/Controllers/HomeController.cs" Line="36" Column="40" />
+      <File FileName="Mission6/Views/Home/Privacy.cshtml" Line="5" Column="7" />
+      <File FileName="Mission6/Views/Home/AddTask.cshtml" Line="1" Column="1" />
+      <File FileName="Mission6/Views/Home/EditTask.cshtml" Line="6" Column="30" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Mission6" expanded="True">
+            <Node name="Mission6" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="EditTask.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
