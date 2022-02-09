@@ -7,39 +7,35 @@ namespace Mission6.Models
         public TaskContext(DbContextOptions<TaskContext> options) : base(options)
         {
         }
-    
-        //public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
-            //Once Zach makes a controller for category we can uncomment this
 
+            mb.Entity<Category>().HasData(
+                new Category
+                {
+                    CategoryId = 1,
+                    CategoryName = "Home"
 
-            //mb.Entity<Category>().HasData(
-            //    new Category
-            //    {
-            //        CategoryId = 1,
-            //        CategoryName = "Home"
-
-            //    },
-            //     new Category
-            //     {
-            //         CategoryId = 2,
-            //         CategoryName = "School"
-            //     },
-            //     new Category
-            //     {
-            //         CategoryId = 3,
-            //         CategoryName = "Work"
-            //     },
-            //    new Category
-            //    {
-            //        CategoryId = 4,
-            //        CategoryName = "Church"
-            //    },
-
-
-            //);
+                },
+                 new Category
+                 {
+                     CategoryId = 2,
+                     CategoryName = "School"
+                 },
+                 new Category
+                 {
+                     CategoryId = 3,
+                     CategoryName = "Work"
+                 },
+                new Category
+                {
+                    CategoryId = 4,
+                    CategoryName = "Church"
+                }
+            );
 
 
 
