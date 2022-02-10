@@ -114,3 +114,4 @@
 /Users/zacharybarton/Desktop/Mission6/Mission6/Mission6/obj/Debug/netcoreapp3.1/Mission6.Views.pdb
 /Users/zacharybarton/Desktop/Mission6/Mission6/Mission6/obj/Debug/netcoreapp3.1/Mission6.csproj.CopyComplete
 /Users/zacharybarton/Desktop/Mission6/Mission6/Mission6/obj/Debug/netcoreapp3.1/Mission6.genruntimeconfig.cache
+/Users/zacharybarton/Desktop/Mission6/Mission6/Mission6/obj/Debug/netcoreapp3.1/Razor/Views/Home/Quadrants.cshtml.g.cs
