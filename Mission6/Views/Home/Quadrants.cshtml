@@ -5,7 +5,8 @@
 @*@model List<ModelName>*@
 
 <div class="container">
-    <div class="row">
+
+    <div class="row"><!--ROW 1-->
 
         <div class="col">
 
@@ -23,34 +24,91 @@
 
 
     <div class="row">
+        <!--ROW 2-->
 
         <div class="col">
             <h1>IMPORTANT</h1>
         </div>
 
+        <!--QUADRANT 1-->
         <div class="col">
-            QUADRANT 1
+            <table>
+                @foreach (x in Model)
+                {
+                    @if (@x.Quadrant == 1)
+                    {
+                        <tr>
+                            <td id="taskName">@x.Task</td>
+                            <td id="category">@x.Category</td>
+                            <td id="dueDate">@x.DueDate</td>
+                            <td id="completed">@x.Completed</td>
+                        </tr>
+                    }
+                }
+            </table>
         </div>
 
+        <!--QUADRANT 2-->
         <div class="col">
-            QUADRANT 2
+            <table>
+                @foreach (x in Model)
+                {
+                    @if (@x.Quadrant == 2)
+                    {
+                        <tr>
+                            <td id="taskName">@x.Task</td>
+                            <td id="category">@x.Category</td>
+                            <td id="dueDate">@x.DueDate</td>
+                            <td id="completed">@x.Completed</td>
+                        </tr>
+                    }
+                }
+            </table>
         </div>
 
     </div>
 
 
     <div class="row">
-
+        <!--ROW 3-->
         <div class="col">
             <h1>NOT IMPORTANT</h1>
         </div>
 
+        <!--QUADRANT 3-->
         <div class="col">
-            QUADRANT 3
+            <table>
+                @foreach (x in Model)
+                {
+                    @if (@x.Quadrant == 3)
+                    {
+                        <tr>
+                            <td id="taskName">@x.Task</td>
+                            <td id="category">@x.Category</td>
+                            <td id="dueDate">@x.DueDate</td>
+                            <td id="completed">@x.Completed</td>
+                        </tr>
+                    }
+                }
+            </table>
         </div>
 
+        <!--QUADRANT 4-->
         <div class="col">
-            QUADRANT 4
+            <table>
+                @foreach (x in Model)
+                {
+                    @if (@x.Quadrant == 4)
+                    { 
+                        <tr>
+                            <td id="taskName">@x.Task</td>
+                            <td id="category">@x.Category</td>
+                            <td id="dueDate">@x.DueDate</td>
+                            <td id="completed">@x.Completed</td>
+                        </tr>
+                    }
+                }
+            </table>
         </div>
 
     </div>
