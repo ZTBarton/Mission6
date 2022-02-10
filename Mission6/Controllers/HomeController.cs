@@ -82,9 +82,9 @@ namespace Mission6.Controllers
                 return View("EditTask", task);
             }
         }
-        [HttpPost]
-        public IActionResult Delete(TaskResponse task)
+        public IActionResult Delete(int id)
         {
+            var task = _taskContext.Tasks.Single(x => x.TaskId == id);
             _taskContext.Tasks.Remove(task);
             _taskContext.SaveChanges();
 
