@@ -57,17 +57,45 @@ namespace Mission6.Controllers
             }
         }
 
-        public IActionResult EditTask()
+        [HttpGet]
+        public IActionResult EditTask(int id)
         {
-            return View();
+            ViewBag.Categories = _taskContext.Categories.ToList();
+
+            var movie = _taskContext.Tasks.Single(x => x.TaskId == id);
+
+            return View("EditTask", movie);
+        }
+        [HttpPost]
+        public IActionResult EditTask(TaskResponse task)
+        {
+            if (ModelState.IsValid)
+            {
+                _taskContext.Update(task);
+                _taskContext.SaveChanges();
+                return RedirectToAction("Quadrants");
+            }
+            else
+            {
+                ViewBag.Categories = _taskContext.Categories.ToList();
+
+                return View("EditTask", task);
+            }
+        }
+        [HttpPost]
+        public IActionResult Delete(TaskResponse task)
+        {
+            _taskContext.Tasks.Remove(task);
+            _taskContext.SaveChanges();
+
+            return RedirectToAction("Quadrants");
         }
         public IActionResult Quadrants()
         {
-            var tasks = _taskContext.Tasks
-                .Include(x => x.Category)
-                .ToList();
+            var tasks = _taskContext.Tasks.ToList();
+            ViewBag.Categories = _taskContext.Categories.ToList();
 
-            return View("Quandrants", tasks);
+            return View("Quadrants", tasks);
         }
     }
 }

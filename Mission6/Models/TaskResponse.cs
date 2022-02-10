@@ -11,15 +11,13 @@ namespace Mission6.Models
             public int TaskId { get; set; }
             [Required]
             public string TaskName { get; set; }
-            [Required]
-            public DateTime DueDate { get; set; }
+            public string DueDate { get; set; }
             [Required]
             public int Quadrant { get; set; }
             public bool Completed { get; set; }
 
             [Required]
             public int CategoryId { get; set; }
-            public Category Category { get; set; }
     }
 }
 

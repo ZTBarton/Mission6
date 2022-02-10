@@ -2,7 +2,7 @@
     ViewData["Title"] = "QUADS...NeverSkipLegDay";
 }
 
-@*@model List<ModelName>*@
+@model List<TaskResponse>
 
 <div class="container">
 
@@ -33,16 +33,31 @@
         <!--QUADRANT 1-->
         <div class="col">
             <table>
-                @*@foreach (x in Model)
+                @foreach (var task in Model)
                 {
-                    @if (@x.Quadrant == 1)
+                    @if (@task.Quadrant == 1)
                     {
                         <tr>
-                            <td id="taskName">@x.Task</td>
-                            <td id="category">@x.Category</td>
-                            <td id="dueDate">@x.DueDate</td>
-                            <td id="completed">@x.Completed</td>
-                        </tr>*@
+                            <td id="taskName">@task.TaskName</td>
+                            @if (task.CategoryId == 1)
+                            {
+                                <td id="dueDate">Home</td>
+                            }
+                            @if (task.CategoryId == 2)
+                            {
+                                <td id="dueDate">School</td>
+                            }
+                            @if (task.CategoryId == 3)
+                            {
+                                <td id="dueDate">Work</td>
+                            }
+                            @if (task.CategoryId == 4)
+                            {
+                                <td id="dueDate">Church</td>
+                            }
+                            <td id="dueDate">@task.DueDate</td>
+                            <td id="completed">@task.Completed</td>
+                        </tr>
                     }
                 }
             </table>
@@ -51,17 +66,32 @@
         <!--QUADRANT 2-->
         <div class="col">
             <table>
-                @*@foreach (x in Model)
+                @foreach (var task in Model)
                 {
-                    @if (@x.Quadrant == 2)
+                    @if (@task.Quadrant == 2)
                     {
                         <tr>
-                            <td id="taskName">@x.Task</td>
-                            <td id="category">@x.Category</td>
-                            <td id="dueDate">@x.DueDate</td>
-                            <td id="completed">@x.Completed</td>
+                            <td id="taskName">@task.TaskName</td>
+                            @if (task.CategoryId == 1)
+                            {
+                                <td id="dueDate">Home</td>
+                            }
+                            @if (task.CategoryId == 2)
+                            {
+                                <td id="dueDate">School</td>
+                            }
+                            @if (task.CategoryId == 3)
+                            {
+                                <td id="dueDate">Work</td>
+                            }
+                            @if (task.CategoryId == 4)
+                            {
+                                <td id="dueDate">Church</td>
+                            }
+                            <td id="dueDate">@task.DueDate</td>
+                            <td id="completed">@task.Completed</td>
                         </tr>
-                    }*@
+                    }
                 }
             </table>
         </div>
@@ -78,16 +108,31 @@
         <!--QUADRANT 3-->
         <div class="col">
             <table>
-                @*@foreach (x in Model)
+                @foreach (var task in Model)
                 {
-                    @if (@x.Quadrant == 3)
+                    @if (@task.Quadrant == 3)
                     {
                         <tr>
-                            <td id="taskName">@x.Task</td>
-                            <td id="category">@x.Category</td>
-                            <td id="dueDate">@x.DueDate</td>
-                            <td id="completed">@x.Completed</td>
-                        </tr>*@
+                            <td id="taskName">@task.TaskName</td>
+                            @if (task.CategoryId == 1)
+                            {
+                                <td id="dueDate">Home</td>
+                            }
+                            @if (task.CategoryId == 2)
+                            {
+                                <td id="dueDate">School</td>
+                            }
+                            @if (task.CategoryId == 3)
+                            {
+                                <td id="dueDate">Work</td>
+                            }
+                            @if (task.CategoryId == 4)
+                            {
+                                <td id="dueDate">Church</td>
+                            }
+                            <td id="dueDate">@task.DueDate</td>
+                            <td id="completed">@task.Completed</td>
+                        </tr>
                     }
                 }
             </table>
@@ -96,16 +141,31 @@
         <!--QUADRANT 4-->
         <div class="col">
             <table>
-                @*@foreach (x in Model)
+                @foreach (var task in Model)
                 {
-                    @if (@x.Quadrant == 4)
-                    { 
+                    @if (@task.Quadrant == 4)
+                    {
                         <tr>
-                            <td id="taskName">@x.Task</td>
-                            <td id="category">@x.Category</td>
-                            <td id="dueDate">@x.DueDate</td>
-                            <td id="completed">@x.Completed</td>
-                        </tr>*@
+                            <td id="taskName">@task.TaskName</td>
+                            @if (task.CategoryId == 1)
+                            {
+                                <td id="dueDate">Home</td>
+                            }
+                            @if (task.CategoryId == 2)
+                            {
+                                <td id="dueDate">School</td>
+                            }
+                            @if (task.CategoryId == 3)
+                            {
+                                <td id="dueDate">Work</td>
+                            }
+                            @if (task.CategoryId == 4)
+                            {
+                                <td id="dueDate">Church</td>
+                            }
+                            <td id="dueDate">@task.DueDate</td>
+                            <td id="completed">@task.Completed</td>
+                        </tr>
                     }
                 }
             </table>
