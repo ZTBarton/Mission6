@@ -1199,7 +1199,7 @@
       "outputPath": "/Users/zacharybarton/Desktop/Mission6/Mission6/Mission6/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/zacharybarton/.config/NuGet/NuGet.Config"
+        "/Users/zacharybarton/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

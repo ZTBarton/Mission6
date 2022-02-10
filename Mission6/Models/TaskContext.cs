@@ -9,6 +9,7 @@ namespace Mission6.Models
         }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<TaskResponse> Tasks { get; set; }
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
@@ -18,7 +19,6 @@ namespace Mission6.Models
                 {
                     CategoryId = 1,
                     CategoryName = "Home"
-
                 },
                  new Category
                  {
@@ -37,18 +37,15 @@ namespace Mission6.Models
                 }
             );
 
-
-
-
             mb.Entity<TaskResponse>().HasData(
                 new TaskResponse
                 {
                     TaskId = 1,
                     DueDate = new DateTime(2023, 5, 1),
+                    TaskName = "Plan FHE",
                     Quadrant = 1,
-                    Category = "Church",
+                    CategoryId = 4,
                     Completed = false
-             
                 }
             
             );
