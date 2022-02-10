@@ -115,3 +115,5 @@
 /Users/zacharybarton/Desktop/Mission6/Mission6/Mission6/obj/Debug/netcoreapp3.1/Mission6.csproj.CopyComplete
 /Users/zacharybarton/Desktop/Mission6/Mission6/Mission6/obj/Debug/netcoreapp3.1/Mission6.genruntimeconfig.cache
 /Users/zacharybarton/Desktop/Mission6/Mission6/Mission6/obj/Debug/netcoreapp3.1/Razor/Views/Home/Quadrants.cshtml.g.cs
+/Users/zacharybarton/Desktop/Mission6/Mission6/Mission6/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+/Users/zacharybarton/Desktop/Mission6/Mission6/Mission6/bin/Debug/netcoreapp3.1/runtimes/linux-mips64/native/libe_sqlite3.so
